@@ -11,7 +11,3 @@
 <li>Django back-end server side web framework</li>
 </ul><ul>
 <li>Python</li>
-</ul><h2>Features that can be added</h2>
-<hr><ul>
-<li>Include feature selection in the models.</li>
-</ul>
