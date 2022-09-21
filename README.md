@@ -1,4 +1,4 @@
-<h1>DDoS-Botnet-Attack-detection-using-Random-Forest</h1>
+<h1>DDoS-Botnet-Attack-detection-using-Random-Forest-Algorithm</h1>
 <hr><p>A Distributed Denial of Service (DDoS) Botnet Attack Detection and Classification System using Random Forest Algorithm.</p><h2>General Information</h2>
 <hr><ul>
 <li>It is an API used to detect DDoS Botnet Attacks using Django and Python.</li>
