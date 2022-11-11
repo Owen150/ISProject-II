@@ -1,9 +1,12 @@
+# backend/server/apps/endpoints/serializers.py file
+# Serializers will help with packing and unpacking database objects into JSON objects
+
 from rest_framework import serializers
-from apps.Endpoints.models import Endpoint
-from apps.Endpoints.models import MLAlgorithm
-from apps.Endpoints.models import MLAlgorithmStatus
-from apps.Endpoints.models import MLRequest
-from apps.Endpoints.models import ABTest
+from apps.endpoints.models import Endpoint
+from apps.endpoints.models import MLAlgorithm
+from apps.endpoints.models import MLAlgorithmStatus
+from apps.endpoints.models import MLRequest
+from apps.endpoints.models import ABTest
 
 class EndpointSerializer(serializers.ModelSerializer):
     class Meta:
