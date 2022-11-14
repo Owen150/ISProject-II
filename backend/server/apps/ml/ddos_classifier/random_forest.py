@@ -5,7 +5,7 @@ import pandas as pd
 class RandomForestClassifier:
     #This constructor loads the preprocessing objects as well as the Random Forest object (created with Jupyter notebook)
     def __init__(self):
-        path_to_artifacts = "C:/Users/Michael Owen/OneDrive/Desktop/ISProject-II/notebooks"
+        path_to_artifacts = "C:/Users/Michael Owen/OneDrive/Desktop/ISProject-II/notebooks/"
         self.values_fill_missing =  joblib.load(path_to_artifacts + "train_mode.joblib")
         self.encoders = joblib.load(path_to_artifacts + "encoders.joblib")
         self.model = joblib.load(path_to_artifacts + "random_forest.joblib")
