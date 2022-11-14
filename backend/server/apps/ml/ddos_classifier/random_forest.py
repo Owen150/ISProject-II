@@ -37,6 +37,6 @@ class RandomForestClassifier:
             prediction = self.predict(input_data)[0]  # Only One Sample
             prediction = self.postprocessing(prediction)
         except Exception as e:
-            return {"status": "Error", "message": str(e)}
+            return {"status", "message": str(e)}
 
         return prediction
