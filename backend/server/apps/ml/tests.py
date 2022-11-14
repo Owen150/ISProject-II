@@ -1,5 +1,7 @@
 from django.test import TestCase
 
+import inspect
+
 from apps.ml.ddos_classifier.random_forest import RandomForestClassifier
 
 class MLTests(TestCase):
@@ -84,6 +86,6 @@ class MLTests(TestCase):
         }
         my_alg = RandomForestClassifier()
         response = my_alg.compute_prediction(input_data)
-        self.assertEqual('OK', response['status'])
-        self.assertTrue('label' in response)
-        self.assertEqual('BENIGN', response['label'])
+        self.assertEqual("OK", response["status"])
+        self.assertTrue("label" in response)
+        self.assertEqual("BENIGN", response["label"])
