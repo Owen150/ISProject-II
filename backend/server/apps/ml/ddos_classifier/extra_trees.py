@@ -4,7 +4,7 @@ import pandas as pd
 
 class ExtraTreesClassifier:
     def __init__(self):
-        path_to_artifacts = "C:/Users/user/Desktop/DDoS-Botnet-Attack-detection-using-Random-Forest/notebooks/"
+        path_to_artifacts = "C:/Users/Michael Owen/OneDrive/Desktop/4.2/ISProject-II/notebooks/"
         self.values_fill_missing =  joblib.load(path_to_artifacts + "train_mode.joblib")
         self.encoders = joblib.load(path_to_artifacts + "encoders.joblib")
         self.model = joblib.load(path_to_artifacts + "extra_trees.joblib")
@@ -23,7 +23,7 @@ class ExtraTreesClassifier:
     def postprocessing(self, input_data):
         label = "DDOS"
         if input_data[1] < 0.5:
-            label = "BENING"
+            label = "BENIGN"
         return {"probability": input_data[1], "label": label, "status": 200}
 
     def compute_prediction(self, input_data):
