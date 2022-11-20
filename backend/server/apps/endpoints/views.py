@@ -17,8 +17,8 @@ from apps.endpoints.models import MLRequest
 from apps.endpoints.serializers import MLRequestSerializer
 
 from django.db import transaction
-from apps.Endpoints.models import ABTest
-from apps.Endpoints.serializers import ABTestSerializer
+from apps.endpoints.models import ABTest
+from apps.endpoints.serializers import ABTestSerializer
 
 import json
 from numpy.random import rand
