@@ -81,7 +81,9 @@ class EndpointTests(TestCase):
                 "Idle_Mean": 0.0, 
                 "Idle_Std": 0.0, 
                 "Idle_Max": 0.0, 
-                "Idle_Min": 0.0
+                "Idle_Min": 0.0,
+                "Label_BENIGN": 1.0,
+		        "Label_DoS": 0.0
             
         }
         classifier_url = "/api/v1/ddos_classifier/predict"
