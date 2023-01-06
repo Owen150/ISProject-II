@@ -11,3 +11,5 @@
 <li>Django back-end server side web framework</li>
 </ul><ul>
 <li>Python</li>
+</ul><ul>
+<li>Jupyter Notebook</li>
